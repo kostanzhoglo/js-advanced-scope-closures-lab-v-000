@@ -1,7 +1,7 @@
 function produceDrivingRange(blockRange) {
   return function(pickUpBlock, dropOffBlock) {
-    let pickUp = parseInt(pickUpBlock);
-    let dropOff = parseInt(dropOffBlock);
+    let pickUp = parseInt(pickUpBlock, 10);
+    let dropOff = parseInt(dropOffBlock, 10);
     let distance = Math.abs(pickUp - dropOff);
     let withinRange = blockRange - distance;
 
